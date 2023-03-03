@@ -1,0 +1,39 @@
+INDEX.HTML
+1. Texto descriptivo que destaca características generales, 
+destacando sus ventajas con respecto a otros gimnasios locales
+
+2. Imagen del gimnasios
+
+3. Tabla con horario y precios
+
+4. Enlace a página "contacto"
+
+CONTACTO.HTML
+1. Mostrar manera de contactar y localización del gimansio.
+
+REGISTRO.HTML
+1. formulario para registrarse en la web del gimnasio.
+
+ACTIVIDADES.HTML
+1. tabla con las diversas actividades dirigidas que ofrece: 
+nombre de la actividad, descripción sucinta y aforo máximo
+
+2. páginas para cada actividad.
+
+ACTIVIDAD.HTML
+1. Contener: 
+    -Nombre de la actividad
+    -Descripción detallada
+    -Local/lugar en el que se realiza
+    -Aforo
+    -Precio de la actividad
+    -Imagen
+
+GENERAL.
+- Desde cualquier página se debe poder regresar a la principal
+- No use etiquetas para transformar el estilo, ni atributos de 
+estilo embebidos
+- Los enlaces entre las distintas páginas deben ser relativos a 
+la carpeta de la propia página y deben referirse a archivos que 
+formen parte de la entrega de la práctica (no se permiten enlaces 
+externos a otros sitios).
