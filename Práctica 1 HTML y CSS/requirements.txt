@@ -1,4 +1,4 @@
-INDEX.HTML
+HTML
 1. Texto descriptivo que destaca características generales, 
 destacando sus ventajas con respecto a otros gimnasios locales
 
@@ -37,3 +37,8 @@ estilo embebidos
 la carpeta de la propia página y deben referirse a archivos que 
 formen parte de la entrega de la práctica (no se permiten enlaces 
 externos a otros sitios).
+
+<=====================================================================================================================================>
+
+CSS
+1. 
