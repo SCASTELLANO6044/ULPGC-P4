@@ -1,10 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 .nav-bar{
-    margin: 0;
-    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
 }
 
 .nav-bar nav ul{
@@ -29,4 +32,9 @@
 
 .nav-bar nav ul li a:hover {
     background-color: #111;
-  }
+}
+
+.index-body {
+    padding: 2em;
+    padding-top: 4em;
+}
