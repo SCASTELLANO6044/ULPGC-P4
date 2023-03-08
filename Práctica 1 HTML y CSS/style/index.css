@@ -1,0 +1,19 @@
+.index-body .title, .description, .image, .tables .price, .tables .schedule, .schedule, .contact{
+    padding: 1em;
+}
+
+.index-body .title{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.price, .schedule{
+    text-align: center;
+}
+
+table{
+    font-size: 1.8em;
+    margin: 0 auto;
+    border-color: black;
+    border-style: double;
+}
