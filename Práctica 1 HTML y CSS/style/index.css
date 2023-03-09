@@ -17,3 +17,7 @@ table{
     border-color: black;
     border-style: double;
 }
+
+.image, .contact{
+    text-align: center;
+}
