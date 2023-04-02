@@ -7,6 +7,40 @@
     font-size: 2.5em;
 }
 
+div .carousel{
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+}
+
+div .carousel img{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+div .carousel img:first-child{
+    display: block;
+}
+
+.prev, .next{
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin-top: -25px;
+    padding: 16px;
+    color: white;
+    font-size: 40px;
+    transition: 0.6 ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next{
+    right: 0;
+}
+
 .price, .schedule{
     text-align: center;
 }
