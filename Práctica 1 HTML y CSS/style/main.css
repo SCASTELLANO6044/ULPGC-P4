@@ -28,10 +28,12 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-weight: 700;
 }
 
 .nav-bar nav ul li a:hover {
     background-color: #111;
+    color: lightslategray;
 }
 
 .index-body {
