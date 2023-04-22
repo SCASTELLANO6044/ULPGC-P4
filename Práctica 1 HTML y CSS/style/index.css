@@ -94,6 +94,35 @@
     font-size: 0.7em;
 }
   
+.description{
+    margin-top: 2.5em;
+    width: 100%;
+}
+
+.description h3{
+    text-align: center;
+    font-size: 2em;
+}
+
+.description div, .description p{
+    margin-top: 1em;
+    display: inline;
+}
+.description div{
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.description img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.description p{
+    text-align: right;
+}
 
 .price, .schedule{
     text-align: center;
