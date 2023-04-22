@@ -1,0 +1,11 @@
+.index-body{
+    width: 100%;
+}
+
+.index-body .title h1{
+    text-align: center;
+}
+
+.index-body .content p{
+    text-align: center;
+}
