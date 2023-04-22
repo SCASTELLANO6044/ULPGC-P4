@@ -1,9 +1,14 @@
-.index-body div, .index-body h1{
+.index-body h1{
+    margin-top: 2em;
+    text-align: center;   
+}
+
+.index-body div{
     margin-top: 2em;
 }
 
 div .activities{
-    width: 100%;
+    width: 50%;
     margin: 0 auto;
 }
 
