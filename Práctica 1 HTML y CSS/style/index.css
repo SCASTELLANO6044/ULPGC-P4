@@ -106,12 +106,15 @@
 
 .description div, .description p{
     margin-top: 1em;
-    display: inline;
+    display: block;
 }
 .description div{
     max-width: 100%;
     height: auto;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .description img{
@@ -128,6 +131,10 @@
     text-align: center;
 }
 
+.image, .contact{
+    text-align: center;
+}
+
 table{
     font-size: 1.8em;
     margin: 0 auto;
@@ -135,6 +142,63 @@ table{
     border-style: double;
 }
 
-.image, .contact{
+div .price{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.subscriptions{
+    border-collapse: collapse;
+    margin:0 auto;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.subscriptions thead tr{
+    background-color: #000000;
+    color: #ffffff;
     text-align: center;
+    font-weight: bold;
+}
+
+.subscriptions th,
+.subscriptions td {
+    padding: 12px 15px;
+}
+
+.subscriptions tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+div .schedule{
+    width: 100%;
+    margin: 0 auto;
+}
+.time-table{
+    border-collapse: collapse;
+    margin:0 auto;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.time-table thead tr{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.time-table th,
+.time-table td {
+    padding: 12px 15px;
+}
+
+.time-table tbody tr {
+    border-bottom: 1px solid #dddddd;
 }
