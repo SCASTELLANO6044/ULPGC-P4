@@ -1,0 +1,13 @@
+.index-body{
+    width: 100%;
+}
+
+.index-body .title h1{
+    text-align: center;
+}
+
+.index-body .content p{
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+}

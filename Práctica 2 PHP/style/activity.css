@@ -1,0 +1,22 @@
+.index-body h1{
+    text-align: center;
+}
+
+.index-body p{
+    margin-top: 1.3em;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+
+.index-body .description{
+    text-align: justify;
+}
+
+.index-body .image{
+    width: 100%;
+}
+
+.index-body img{
+    margin-left: 18%;
+    margin-top: 1.5em;
+}

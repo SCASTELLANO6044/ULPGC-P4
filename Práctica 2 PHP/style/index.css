@@ -1,0 +1,206 @@
+.index-body .title, .description, .image, .tables .price, .tables .schedule, .schedule, .contact{
+    padding: 1em;
+}
+
+.index-body .title{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.carousel {
+    position: relative;
+    width: 1400px;
+    height: 787px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+  
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+  
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+  
+.carousel-item.active {
+    opacity: 1;
+}
+  
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+    transition: background 0.5s ease-in-out;
+}
+  
+.carousel-control:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+  
+.carousel-control-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+  
+.carousel-control.prev {
+    left: 20px;
+}
+  
+.carousel-control.next {
+    right: 20px;
+}
+
+.carousel-text{
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    transform: translateY(-50%);
+    z-index: 10;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: 5px 0 5px black;
+    text-decoration: none;
+}
+
+.carousel-text h4{
+    font-size: 1em;
+}
+
+.carousel-text p{
+    font-size: 0.7em;
+}
+  
+.description{
+    margin-top: 2.5em;
+    width: 100%;
+}
+
+.description h3{
+    text-align: center;
+    font-size: 2em;
+}
+
+.description div, .description p{
+    margin-top: 1em;
+    margin-left: 7em;
+    margin-right: 7em;
+    display: block;
+}
+.description div{
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.description p{
+    text-align: justify;
+}
+
+.price, .schedule{
+    text-align: center;
+}
+
+.image, .contact{
+    text-align: center;
+}
+
+table{
+    font-size: 1.8em;
+    margin: 0 auto;
+    border-color: black;
+    border-style: double;
+}
+
+div .price{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.subscriptions{
+    border-collapse: collapse;
+    margin:0 auto;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+.subscriptions thead tr{
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+}
+
+.subscriptions th,
+.subscriptions td {
+    padding: 12px 15px;
+}
+
+.subscriptions tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+div .schedule{
+    width: 100%;
+    margin: 0 auto;
+}
+.time-table{
+    border-collapse: collapse;
+    margin:0 auto;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+.time-table thead tr{
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+}
+
+.time-table th,
+.time-table td {
+    padding: 12px 15px;
+}
+
+.time-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
