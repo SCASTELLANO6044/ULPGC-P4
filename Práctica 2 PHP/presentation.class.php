@@ -20,7 +20,17 @@ class View{
         <li><a href=\"./activities.php\">Actividades</a></li>
         ";
         if ( $user == true) {
-            echo " <li><a href='/logout.php'>Cerrar sesión</a></li>";
+            switch ($user['rol']){
+                case 2:
+                case 3:
+                    echo "<li><a href='/UserActivities.php'>Tus Actividades</a></li>";
+                    break;
+                case 1:
+                    echo "<li><a href='/UserActivities.php'>Tus Actividades</a></li>";
+                    echo "<li><a href='/logout.php'>Usuarios</a></li>";
+                    break;
+            }
+            echo "<li><a href='/logout.php'>Cerrar sesión</a></li>";
         } else {
             echo " <li><a href='/signup.php'>Iniciar sesión</a></li>";
         }
