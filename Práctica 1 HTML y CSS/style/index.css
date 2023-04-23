@@ -154,12 +154,12 @@ div .price{
     min-width: 400px;
     border-radius: 12px 12px 0 0;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
 }
 
 .subscriptions thead tr{
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     text-align: center;
     font-weight: bold;
 }
@@ -184,12 +184,12 @@ div .schedule{
     min-width: 400px;
     border-radius: 12px 12px 0 0;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
 }
 
 .time-table thead tr{
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     text-align: center;
     font-weight: bold;
 }
