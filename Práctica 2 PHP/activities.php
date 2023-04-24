@@ -44,11 +44,11 @@ include_once 'data_access.class.php';
     $it = 1;
     foreach($datos as $registro){
         echo "
-                    <tr class=\"activity{$it}\">
-                        <td><a href=\"./Activities/{$registro['nombre']}.html\">{$registro['nombre']}</a></td>
-                        <td>{$registro['descripcion']}</td>
-                        <td>{$registro['aforo']}</td>
-                    </tr>   
+                <tr class=\"activity{$it}\">
+                    <td><a href=\"./Activities/{$registro['nombre']}.html\">{$registro['nombre']}</a></td>
+                    <td>{$registro['descripcion']}</td>
+                    <td>{$registro['aforo']}</td>
+                </tr>   
             ";
         $it++;
     }
