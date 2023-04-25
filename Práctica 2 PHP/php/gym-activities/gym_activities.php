@@ -1,6 +1,6 @@
 <?php
-include_once 'presentation.class.php';
-include_once 'data_access.class.php';
+include_once '../../presentation.class.php';
+include_once '../../data_access.class.php';
 ?>
 
     <!DOCTYPE html>
@@ -8,8 +8,8 @@ include_once 'data_access.class.php';
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" type="text/css" href="style/main.css">
-        <link rel="stylesheet" type="text/css" href="style/activities.css">
+        <link rel="stylesheet" type="text/css" href="/style/main.css">
+        <link rel="stylesheet" type="text/css" href="/style/gym-activities.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
     </head>
@@ -45,7 +45,7 @@ include_once 'data_access.class.php';
     foreach($datos as $registro){
         echo "
                 <tr class=\"activity{$it}\">
-                    <td><a href=\"./Activities/{$registro['nombre']}.html\">{$registro['nombre']}</a></td>
+                    <td>{$registro['nombre']}</td>
                     <td>{$registro['descripcion']}</td>
                     <td>{$registro['aforo']}</td>
                 </tr>   
