@@ -23,8 +23,8 @@ $datos = $res->fetchAll();
                 </thead>
                 <tbody>
 <?php
+            $it = 1;
             foreach($datos as $registro){
-                $it = 1;
                 echo "
                     <tr class=\"activity{$it}\">
                         <td>{$registro['nombre']}</td>
@@ -40,13 +40,12 @@ $datos = $res->fetchAll();
         </div>
 <?php
 $query = "
-    SELECT actividades.nombre as nombre, actividades.descripcion as descripcion, actividades.aforo as aforo
-    actividad.id as actividadid, usuarioactividad.idusuario as usuarioid
-    FROM actividades
-    JOIN usuarioactividad ON actividades.id = usuarioactividad.idactividad
-    WHERE usuarioactividad.idusuario = '".addslashes($user['id'])."' AND usuarioactividad.asistencia = 0
+                        SELECT actividades.nombre as nombre, actividades.descripcion as descripcion, actividades.aforo as aforo
+                        FROM actividades
+                        JOIN usuarioactividad ON actividades.id = usuarioactividad.idactividad
+                        WHERE usuarioactividad.idusuario = '".addslashes($user['id'])."' AND usuarioactividad.asistencia = 0
 ";
-$res = DB::execute_sql($query);
+$res= DB::execute_sql($query);
 $res->setFetchMode(PDO::FETCH_ASSOC); // Establecemos que queremos cada fila como array asociativo
     
 $datos = $res->fetchAll();                
@@ -77,15 +76,19 @@ $datos = $res->fetchAll();
                         </form>
                     </tr>   
                     ";
-            }
-            if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-                if (isset($_POST['delete-pending-activity'])) {
-                    $query = "
-                        DELETE *
-                        FROM usuarioactividad where idusuario = 
-                    ";
+                if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                    if (isset($_POST['delete-pending-activity'])) {
+                        $query = "
+                            DELETE *
+                            FROM usuarioactividad 
+                            WHERE idusuario = '".addslashes($user['id'])."'
+                        ";
+                        $res= DB::execute_sql($query);
+                        $res->setFetchMode(PDO::FETCH_ASSOC);
+                    }
                 }
             }
+            
 ?>
                 </tbody>
             </table>
