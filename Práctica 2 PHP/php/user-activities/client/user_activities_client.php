@@ -34,7 +34,7 @@ $datos = $res->fetchAll();
                     ";
                 $it++;
             }
-?>
+?> 
                 </tbody>
             </table>
         </div>
