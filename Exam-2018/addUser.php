@@ -4,13 +4,30 @@ View::start('Artencuentro');
 View::navigation(User::getLoggedUser());
 $user = User::getLoggedUser();
 
+if (isset($_POST['cuenta'])) {
+    $users = User::getAllUsers();
+    $founded = FALSE;
+    echo $founded;
+    foreach($users as $user) {
+        if ($user['cuenta'] == $_POST['cuenta']){
+               $founded = TRUE;
+        }
+    }
+    if($founded == FALSE){
+        echo 'hola';
+        $query = "INSERT INTO usuarios (cuenta, clave, nombre, tipo, poblacion, direccion, telefono) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        $params = array($_POST['cuenta'], $_POST['clave'], $_POST['nombre'], $_POST['tipo'], $_POST['poblacion'], $_POST['direccion'], $_POST['telefono']);
+        DB::execute_sql($query, $params);
+    }
+}
+
 ?>
 <link rel="stylesheet" type="text/css" href="css/addUser.css">
 <script src="js/addUser.js"></script>
 <?php
 
 if ($user and $user['tipo'] = 1){
-    echo '<form method="post" onsubmit="addUserValidation(event)">';
+    echo '<form method="post" onsubmit="addUserValidation(event, this)">';
     echo '<label for="cuenta">Cuenta </label>';
     echo '<input type="text" name="cuenta" id="cuenta">';
     

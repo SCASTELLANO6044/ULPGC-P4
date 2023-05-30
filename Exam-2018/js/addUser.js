@@ -1,6 +1,4 @@
 function addUserValidation(event){
-    
-    console.log("holaaaaaaaaaaa")
     event.preventDefault();
     
     var cuenta = document.getElementById("cuenta").value
