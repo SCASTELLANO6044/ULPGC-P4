@@ -14,7 +14,6 @@ if (isset($_POST['cuenta'])) {
         }
     }
     if($founded == FALSE){
-        echo 'hola';
         $query = "INSERT INTO usuarios (cuenta, clave, nombre, tipo, poblacion, direccion, telefono) VALUES (?, ?, ?, ?, ?, ?, ?)";
         $params = array($_POST['cuenta'], $_POST['clave'], $_POST['nombre'], $_POST['tipo'], $_POST['poblacion'], $_POST['direccion'], $_POST['telefono']);
         DB::execute_sql($query, $params);

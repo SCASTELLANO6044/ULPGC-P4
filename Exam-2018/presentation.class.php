@@ -40,16 +40,18 @@ class View{
             echo '<th>Población</th>';
             echo '<th>Dirección</th>';
             echo '<th>Teléfono</th>';
+            echo '<th>Borrar</th>';
             echo '</tr>';
             foreach($users as $user) {
                 echo '<tr>';
-                echo "<td>{$user['cuenta']}</td>";
+                echo "<td id={$user['cuenta']}>{$user['cuenta']}</td>";
                 echo "<td>{$user['nombre']}</td>";
                 $tipostr = (['Administrador', 'Autor', 'Empresa'])[$user['tipo']-1];
                 echo "<td>$tipostr</td>";
                 echo "<td>{$user['poblacion']}</td>";
                 echo "<td>{$user['direccion']}</td>";
                 echo "<td>{$user['telefono']}</td>";
+                echo "<td><button onclick=\"deleteUser('{$user['cuenta']}')\">Borrar</button></td>";
                 echo '</tr>';
             }
             echo "</table>";
