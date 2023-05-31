@@ -1,0 +1,54 @@
+/* COLORES BASE DEL TEMA
+Normal => texto:#000 fondo:#f4faf4
+Encabezados => texto:#fff fondo:#4caf50
+Errores => texto:#000 fondo:#93cf95
+Normal2 => texto:#fff fondo:#265728
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.nav-bar{
+    background-color: black;
+    width: 100%;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    position: fixed;
+    top: 0;
+}
+
+.nav-bar a{
+    font: Arial;
+    color: white;
+    padding: 0.5em;
+    font-weight: bold;
+    font-size: 1.45em;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body{
+    position: relative;
+}
+
+.nav-bar a:hover{
+    background-color: #1e1e1f;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    background-color: black;
+}
+
+footer h4{
+    color: white;
+    text-align: center;
+    font-size: 1.45em;
+}
