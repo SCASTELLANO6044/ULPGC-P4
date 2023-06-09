@@ -1,0 +1,30 @@
+.not-allowed{
+    text-align: center;
+    margin: 4em;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td{
+    padding: 8px;
+    text-align: center;
+}
+
+th{
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:nth-child(even){
+    background-color: #f9f9f9;
+}
+
+tr:hover{
+    background-color: #eaeaea;
+}
